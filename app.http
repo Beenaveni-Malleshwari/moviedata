@@ -1,0 +1,34 @@
+# API 1: Get all movies
+GET http://localhost:3000/movies/
+
+# API 2: Add a new movie
+POST http://localhost:3000/movies/
+Content-Type: application/json
+
+{
+  "directorId": 6,
+  "movieName": "Jurassic Park",
+  "leadActor": "Jeff Goldblum"
+}
+
+# API 3: Get movie by ID
+GET http://localhost:3000/movies/12/
+
+# API 4: Update movie by ID
+PUT http://localhost:3000/movies/12/
+Content-Type: application/json
+
+{
+  "directorId": 24,
+  "movieName": "Thor",
+  "leadActor": "Christopher Hemsworth"
+}
+
+# API 5: Delete movie by ID
+DELETE http://localhost:3000/movies/12/
+
+# API 6: Get all directors
+GET http://localhost:3000/directors/
+
+# API 7: Get movies by a specific director
+GET http://localhost:3000/directors/24/movies/
